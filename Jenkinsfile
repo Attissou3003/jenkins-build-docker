@@ -10,7 +10,7 @@ node{
     }
 
     stage('Run image') {
-        docker.image('valerie/nginx').withRun('-p 8083:80') { c ->
+        docker.image('xavki/nginx').withRun('-p 8083:80') { c ->
 
         sh 'docker ps'
 
